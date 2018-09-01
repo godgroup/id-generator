@@ -1,0 +1,5 @@
+rootProject.name = 'id-generator'
+include 'id-generator-client'
+include 'id-generator-server'
+include 'id-generator-common'
+
