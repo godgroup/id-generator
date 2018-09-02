@@ -2,11 +2,11 @@ allprojects {
     group 'com.godgroup.framework'
 }
 
+
 subprojects {
     apply plugin: 'java'
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
-
 
     repositories {
         mavenLocal()
@@ -17,6 +17,10 @@ subprojects {
     }
 
     dependencies{
+        compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.6'
+        compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.6'
+        compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.6'
+
         compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
     }
 }
